@@ -23,7 +23,8 @@
   "dependencies": {
     "chai-spies": "^1.0.0",
     "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.4"
+    "vue-hot-reload-api": "^2.3.0",
+    "vue2": "^1.0.0"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.0.0",
