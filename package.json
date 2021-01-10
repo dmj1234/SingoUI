@@ -20,9 +20,16 @@
   },
   "homepage": "https://github.com/dmj1234/SingoUI#readme",
   "dependencies": {
-    "vue": "^2.6.12"
+    "vue": "^2.6.12",
+    "vue-hot-reload-api": "^2.3.4"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "@vue/component-compiler-utils": "^2.0.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.9.2",
+    "vue-template-compiler": "^2.5.16"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
   }
 }
