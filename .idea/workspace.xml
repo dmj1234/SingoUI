@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9b6fc7-b5bc-40d0-8d7a-d6b74f14290a" name="Default Changelist" comment="使用npm test 和 npm run dev-test 自动测试">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
       <workItem from="1610209478257" duration="6634000" />
       <workItem from="1610241576307" duration="4114000" />
       <workItem from="1610245773031" duration="90000" />
-      <workItem from="1610245924953" duration="4739000" />
+      <workItem from="1610245924953" duration="7277000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1610210383049</created>

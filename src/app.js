@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Button from './button'
 import Icon from './icon'
 import ButtonGroup from './button-group'
-
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
 Vue.component('g-button-group', ButtonGroup)
@@ -14,13 +13,15 @@ new Vue({
     loading3: false,
   }
 })
-
 import chai from 'chai'
-
+import spies from 'chai-spies'
+chai.use(spies)
 const expect = chai.expect
 try {
+
   // 单元测试
   {
+    '可以设置 icon'
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
       propsData: {
@@ -91,7 +92,6 @@ try {
     })
     vm.$mount()
     let spy = chai.spy(function () {})
-
     vm.$on('click', spy)
     // 希望这个函数被执行
     let button = vm.$el
@@ -101,7 +101,7 @@ try {
 } catch (error) {
   window.errors = [error]
 } finally {
-  window.errors.forEach((error) => {
-    console.error(error.message)
-  })
-}
+    window.errors && window.errors.forEach((error) => {
+      console.error(error.message)
+    })
+  }
