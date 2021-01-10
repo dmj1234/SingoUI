@@ -1,6 +1,6 @@
 <template>
-  <div class="popover" @click="onClick" ref="popover">
-    <div class="popover" ref="popover">
+  <div class="popover" ref="popover">
+    <div ref="contentWrapper" class="content-wrapper" v-if="visible"
          :class="{[`position-${position}`]:true}">
       <slot name="content" :close="close"></slot>
     </div>
@@ -9,7 +9,6 @@
     </span>
   </div>
 </template>
-
 <script>
 export default {
   name: "GuluPopover",
@@ -68,8 +67,8 @@ export default {
   },
   methods: {
     positionContent () {
-          const {contentWrapper, triggerWrapper} = this.$refs
-          document.body.appendChild(contentWrapper)
+      const {contentWrapper, triggerWrapper} = this.$refs
+      document.body.appendChild(contentWrapper)
       const {width, height, top, left} = triggerWrapper.getBoundingClientRect()
       const {height: height2} = contentWrapper.getBoundingClientRect()
       let positions = {
@@ -88,6 +87,9 @@ export default {
       contentWrapper.style.top = positions[this.position].top + 'px'
     },
     onClickDocument (e) {
+      if (this.$refs.popover &&
+          (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))
+      ) { return }
       if (this.$refs.contentWrapper &&
           (this.$refs.contentWrapper === e.target || this.$refs.contentWrapper.contains(e.target))
       ) { return }
@@ -108,16 +110,14 @@ export default {
       if (this.$refs.triggerWrapper.contains(event.target)) {
         if (this.visible === true) {
           this.close()
-
         } else {
           this.open()
         }
-    }
+      }
     }
   }
 }
 </script>
-
 <style scoped lang="scss">
 $border-color: #333;
 $border-radius: 4px;
@@ -135,7 +135,6 @@ $border-radius: 4px;
   padding: .5em 1em;
   max-width: 20em;
   word-break: break-all;
-
   &::before, &::after {
     content: '';
     display: block;
@@ -144,7 +143,6 @@ $border-radius: 4px;
     height: 0;
     position: absolute;
   }
-}
   &.position-top {
     transform: translateY(-100%);
     margin-top: -10px;
@@ -152,7 +150,6 @@ $border-radius: 4px;
       left: 10px;
     }
     &::before {
-
       border-top-color: black;
       border-bottom: none;
       top: 100%;
@@ -196,22 +193,23 @@ $border-radius: 4px;
       border-right: none;
       left: calc(100% - 1px);
     }
-    &.position-right {
-      margin-left: 10px;
-      &::before, &::after {
-        transform: translateY(-50%);
-        top: 50%;
-      }
-      &::before {
-        border-right-color: black;
-        border-left: none;
-        right: 100%;
-      }
-      &::after {
-        border-right-color: white;
-        border-left: none;
-        right: calc(100% - 1px);
-      }
+  }
+  &.position-right {
+    margin-left: 10px;
+    &::before, &::after {
+      transform: translateY(-50%);
+      top: 50%;
+    }
+    &::before {
+      border-right-color: black;
+      border-left: none;
+      right: 100%;
+    }
+    &::after {
+      border-right-color: white;
+      border-left: none;
+      right: calc(100% - 1px);
+    }
   }
 }
 </style>
