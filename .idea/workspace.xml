@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab9b6fc7-b5bc-40d0-8d7a-d6b74f14290a" name="Default Changelist" comment="使用npm test 和 npm run dev-test 自动测试">
+    <list default="true" id="ab9b6fc7-b5bc-40d0-8d7a-d6b74f14290a" name="Default Changelist" comment="更新 README.md">
+      <change afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,9 @@
       <workItem from="1610241576307" duration="4114000" />
       <workItem from="1610245773031" duration="90000" />
       <workItem from="1610245924953" duration="7277000" />
-      <workItem from="1610253510457" duration="748000" />
+      <workItem from="1610253510457" duration="1891000" />
+      <workItem from="1610255450376" duration="876000" />
+      <workItem from="1610256348987" duration="1950000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1610210383049</created>
@@ -147,7 +150,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610248957483</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="dist/index.js">
+      <created>1610254911157</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610254911157</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新 README.md">
+      <created>1610257787430</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1610257787430</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +196,8 @@
     <MESSAGE value="第一个元素不需要margin-left -1px" />
     <MESSAGE value="使用chai.expect  添加四个测试用例，第五个不会" />
     <MESSAGE value="使用npm test 和 npm run dev-test 自动测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用npm test 和 npm run dev-test 自动测试" />
+    <MESSAGE value="dist/index.js" />
+    <MESSAGE value="更新 README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新 README.md" />
   </component>
 </project>
