@@ -24,12 +24,12 @@
   },
   "homepage": "https://github.com/dmj1234/SingoUI#readme",
   "dependencies": {
-    "chai-spies": "^1.0.0",
-    "vue": "^2.6.12",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue2": "^1.0.0"
+    "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
+    "vue-server-renderer": "2.6.12",
+    "vue": "2.6.12",
+    "vue-router": "^2.6.12",
     "@vue/component-compiler-utils": "^2.0.0",
     "chai": "^4.2.0",
     "karma": "^2.0.4",
@@ -45,7 +45,7 @@
     "parcel-bundler": "^1.9.2",
     "sinon": "^6.0.1",
     "sinon-chai": "^3.2.0",
-    "vue-template-compiler": "^2.5.16",
+    "vue-template-compiler": "^2.6.12",
     "vuepress": "^0.13.1"
   },
   "alias": {
