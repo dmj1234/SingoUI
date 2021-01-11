@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab9b6fc7-b5bc-40d0-8d7a-d6b74f14290a" name="Default Changelist" comment="更新 README.md">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/get-started/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/install/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/install/macos.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/install/window.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -65,6 +64,19 @@
       <workItem from="1610253510457" duration="1891000" />
       <workItem from="1610255450376" duration="876000" />
       <workItem from="1610256348987" duration="1950000" />
+      <workItem from="1610346200218" duration="654000" />
+      <workItem from="1610346908371" duration="2321000" />
+      <workItem from="1610349285315" duration="769000" />
+      <workItem from="1610350115800" duration="799000" />
+      <workItem from="1610350953490" duration="251000" />
+      <workItem from="1610352135086" duration="398000" />
+      <workItem from="1610356334380" duration="48000" />
+      <workItem from="1610357056346" duration="15000" />
+      <workItem from="1610358047360" duration="88000" />
+      <workItem from="1610358836202" duration="22000" />
+      <workItem from="1610360300049" duration="495000" />
+      <workItem from="1610360949738" duration="47000" />
+      <workItem from="1610361031954" duration="3919000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1610210383049</created>
@@ -171,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610257787430</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="删除空格">
+      <created>1610345371668</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610345371668</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +224,7 @@
     <MESSAGE value="使用npm test 和 npm run dev-test 自动测试" />
     <MESSAGE value="dist/index.js" />
     <MESSAGE value="更新 README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新 README.md" />
+    <MESSAGE value="删除空格" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除空格" />
   </component>
 </project>

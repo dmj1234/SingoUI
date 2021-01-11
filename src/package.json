@@ -1,8 +1,8 @@
 {
-  "name": "singo",
+  "name": "singo-ui-test-1",
   "version": "0.0.1",
-  "description": "一个组件",
-  "main": "index.js",
+  "description": "UI框架",
+  "main": "dist/index.js",
   "scripts": {
     "start": "parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache & karma start",
@@ -13,19 +13,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmj1234/Singo-UI.git"
+    "url": "git+https://github.com/dmj1234/SingoUI.git"
   },
+  "keywords": [
+    "vue，ui"
+  ],
   "author": "dmj1234",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmj1234/Singo-UI/issues"
+    "url": "https://github.com/dmj1234/SingoUI/issues"
   },
-  "homepage": "https://github.com/dmj1234/Singo-UI#readme",
+  "homepage": "https://github.com/dmj1234/SingoUI#readme",
   "dependencies": {
-    "vue-hot-reload-api": "^2.5.16"
+    "vue-hot-reload-api": "^2.3.0"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.5.16",
+    "vue": "^3.1.8",
+    "vue-server-renderer": "^3.1.8",
+    "vue-template-compiler": "^3.1.8",
+    "vue-router": "^3.1.8",
+    "@vue/component-compiler-utils": "^2.0.0",
     "chai": "^4.1.2",
     "chai-spies": "^1.0.0",
     "karma": "^2.0.4",
@@ -40,9 +47,6 @@
     "sass-loader": "^7.1.0",
     "sinon": "^6.0.1",
     "sinon-chai": "^3.2.0",
-    "vue": "^2.5.16",
-    "vue-router": "^2.5.16",
-    "vue-template-compiler": "^2.5.16",
     "vuepress": "^0.13.1"
   },
   "alias": {

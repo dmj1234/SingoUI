@@ -135,12 +135,7 @@ $border-radius: 4px;
   padding: .5em 1em;
   max-width: 20em;
   word-break: break-all;
-<<<<<<< HEAD
-
-  .content-wrapper::before, .content-wrapper::after {
-=======
   &::before, &::after {
->>>>>>> 8023fc866df5ab6dfbd4106e95be3d1717610df9
     content: '';
     display: block;
     border: 10px solid transparent;
@@ -148,84 +143,50 @@ $border-radius: 4px;
     height: 0;
     position: absolute;
   }
-<<<<<<< HEAD
-}
-.content-wrapper.position-top {
-=======
   &.position-top {
->>>>>>> 8023fc866df5ab6dfbd4106e95be3d1717610df9
     transform: translateY(-100%);
     margin-top: -10px;
-  .content-wrapper::before, &::after {
+    &::before, &::after {
       left: 10px;
     }
-<<<<<<< HEAD
-  .content-wrapper::before {
-
-=======
     &::before {
->>>>>>> 8023fc866df5ab6dfbd4106e95be3d1717610df9
       border-top-color: black;
-      border-bottom: none;
       top: 100%;
     }
-  .content-wrapper::after {
+    &::after {
       border-top-color: white;
-      border-bottom: none;
       top: calc(100% - 1px);
     }
   }
-.content-wrapper.position-bottom {
+  &.position-bottom {
     margin-top: 10px;
-  .content-wrapper::before, &::after {
+    &::before, &::after {
       left: 10px;
     }
-  .content-wrapper::before {
-      border-top: none;
+    &::before {
       border-bottom-color: black;
       bottom: 100%;
     }
-  .content-wrapper::after {
-      border-top: none;
+    &::after {
       border-bottom-color: white;
       bottom: calc(100% - 1px);
     }
   }
-.content-wrapper.position-left {
+  &.position-left {
     transform: translateX(-100%);
     margin-left: -10px;
-  .content-wrapper::before, &::after {
+    &::before, &::after {
       transform: translateY(-50%);
       top: 50%;
     }
-  .content-wrapper::before {
+    &::before {
       border-left-color: black;
-      border-right: none;
       left: 100%;
     }
-  .content-wrapper::after {
+    &::after {
       border-left-color: white;
-      border-right: none;
       left: calc(100% - 1px);
     }
-<<<<<<< HEAD
-  .content-wrapper.position-right {
-      margin-left: 10px;
-    .content-wrapper::before, &::after {
-        transform: translateY(-50%);
-        top: 50%;
-      }
-    .content-wrapper::before {
-        border-right-color: black;
-        border-left: none;
-        right: 100%;
-      }
-    .content-wrapper::after {
-        border-right-color: white;
-        border-left: none;
-        right: calc(100% - 1px);
-      }
-=======
   }
   &.position-right {
     margin-left: 10px;
@@ -235,15 +196,14 @@ $border-radius: 4px;
     }
     &::before {
       border-right-color: black;
-      border-left: none;
       right: 100%;
     }
     &::after {
       border-right-color: white;
-      border-left: none;
       right: calc(100% - 1px);
     }
->>>>>>> 8023fc866df5ab6dfbd4106e95be3d1717610df9
   }
 }
+</style>
+
 </style>
