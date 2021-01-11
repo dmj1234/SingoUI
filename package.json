@@ -4,6 +4,8 @@
   "description": "UI框架",
   "main": "dist/index.js",
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-minify && karma start --single-run",
     "build": "parcel build index.js --no-cache --no-minify",
@@ -45,8 +47,13 @@
     "parcel-bundler": "^1.9.2",
     "sinon": "^6.0.1",
     "sinon-chai": "^3.2.0",
+<<<<<<< HEAD
     "vue-template-compiler": "^2.6.12",
     "vuepress": "^0.13.1"
+=======
+    "vue-template-compiler": "^2.5.16",
+    "vuepress": "^1.8.0"
+>>>>>>> 8023fc866df5ab6dfbd4106e95be3d1717610df9
   },
   "alias": {
     "vue": "./node_modules/vue/dist/vue.common.js"
