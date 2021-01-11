@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab9b6fc7-b5bc-40d0-8d7a-d6b74f14290a" name="Default Changelist" comment="更新 README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +70,7 @@
       <workItem from="1610360300049" duration="495000" />
       <workItem from="1610360949738" duration="47000" />
       <workItem from="1610361031954" duration="3919000" />
+      <workItem from="1610365228100" duration="1106000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1610210383049</created>
