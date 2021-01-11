@@ -136,7 +136,7 @@ $border-radius: 4px;
   max-width: 20em;
   word-break: break-all;
 
-  &::before, &::after {
+  .content-wrapper::before, .content-wrapper::after {
     content: '';
     display: block;
     border: 10px solid transparent;
@@ -145,69 +145,69 @@ $border-radius: 4px;
     position: absolute;
   }
 }
-  &.position-top {
+.content-wrapper.position-top {
     transform: translateY(-100%);
     margin-top: -10px;
-    &::before, &::after {
+  .content-wrapper::before, &::after {
       left: 10px;
     }
-    &::before {
+  .content-wrapper::before {
 
       border-top-color: black;
       border-bottom: none;
       top: 100%;
     }
-    &::after {
+  .content-wrapper::after {
       border-top-color: white;
       border-bottom: none;
       top: calc(100% - 1px);
     }
   }
-  &.position-bottom {
+.content-wrapper.position-bottom {
     margin-top: 10px;
-    &::before, &::after {
+  .content-wrapper::before, &::after {
       left: 10px;
     }
-    &::before {
+  .content-wrapper::before {
       border-top: none;
       border-bottom-color: black;
       bottom: 100%;
     }
-    &::after {
+  .content-wrapper::after {
       border-top: none;
       border-bottom-color: white;
       bottom: calc(100% - 1px);
     }
   }
-  &.position-left {
+.content-wrapper.position-left {
     transform: translateX(-100%);
     margin-left: -10px;
-    &::before, &::after {
+  .content-wrapper::before, &::after {
       transform: translateY(-50%);
       top: 50%;
     }
-    &::before {
+  .content-wrapper::before {
       border-left-color: black;
       border-right: none;
       left: 100%;
     }
-    &::after {
+  .content-wrapper::after {
       border-left-color: white;
       border-right: none;
       left: calc(100% - 1px);
     }
-    &.position-right {
+  .content-wrapper.position-right {
       margin-left: 10px;
-      &::before, &::after {
+    .content-wrapper::before, &::after {
         transform: translateY(-50%);
         top: 50%;
       }
-      &::before {
+    .content-wrapper::before {
         border-right-color: black;
         border-left: none;
         right: 100%;
       }
-      &::after {
+    .content-wrapper::after {
         border-right-color: white;
         border-left: none;
         right: calc(100% - 1px);
