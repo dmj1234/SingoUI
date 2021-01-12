@@ -1,11 +1,10 @@
 <template>
-  <div class="cascader">
-
-      <div class="trigger" @click="popoverVisible = !popoverVisible">
+  <div class="cascader" ref="cascader" v-click-outside="close">
+    <div class="trigger" @click="toggle">
         {{result || '&nbsp;'}}
       </div>
     <div class="popover-wrapper" v-if="popoverVisible">
-      <cascader-items :items="source" class="popover"
+      <cascader-items :items="source" class="popover" :loadData="loadData"
                       :height="popoverHeight" :selected="selected" @update:selected="onUpdateSelected"></cascader-items>
         </div>
       </div>
@@ -13,9 +12,11 @@
 
 <script>
 import CascaderItems from './cascader-items'
+import ClickOutside from './click-outside'
 export default {
   name: 'GuluCascader',
   components: {CascaderItems},
+  directives: {ClickOutside},
   props: {
     source: {
       type: Array
@@ -40,6 +41,22 @@ export default {
   updated () {
   },
   methods: {
+
+    open () {
+      this.popoverVisible = true
+
+    },
+    close () {
+      this.popoverVisible = false
+      
+    },
+    toggle () {
+      if (this.popoverVisible === true) {
+        this.close()
+      } else {
+        this.open()
+      }
+    },
     onUpdateSelected (newSelected) {
       this.$emit('update:selected', newSelected)
       let lastItem = newSelected[newSelected.length - 1]
@@ -79,8 +96,10 @@ export default {
         toUpdate.children = result
         this.$emit('update:source', copy)
       }
-      this.loadData(lastItem, updateSource) // 回调:把别人传给我的函数调用一下
-      // 调回调的时候传一个函数,这个函数理论应该被调用
+      if (!lastItem.isLeaf) {
+        this.loadData && this.loadData(lastItem, updateSource) // 回调:把别人传给我的函数调用一下
+        // 调回调的时候传一个函数,这个函数理论应该被调用
+      }
     }
   },
   computed: {
@@ -94,7 +113,9 @@ export default {
 <style scoped lang="scss">
 @import "var";
 .cascader {
+  display: inline-block;
   position: relative;
+  border: 1px solid red;
   .trigger {
     height: $input-height;
     display: inline-flex;
