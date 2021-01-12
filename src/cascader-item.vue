@@ -50,6 +50,7 @@ export default {
     onClickLabel (item) {
       let copy = JSON.parse(JSON.stringify(this.selected))
       copy[this.level] = item
+      copy.splice(this.level + 1) // 一句话
       this.$emit('update:selected', copy)
     },
     onUpdateSelected (newSelected) {
@@ -66,7 +67,6 @@ export default {
   align-items: flex-start;
   justify-content: flex-start;
   height: 100px;
-  border: 1px solid red;
   .left {
     height: 100%;
     padding: .3em 0;
