@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Singo-UI',
+  base: '/SingoUI/',
   description: 'UI框架的素颜',
   themeConfig: {
     nav: [
