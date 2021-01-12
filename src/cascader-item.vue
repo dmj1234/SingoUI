@@ -1,20 +1,36 @@
 <template>
   <div class="cascaderItem">
-    {{sourceItem.name}}
-    <gulu-cascader-item
-        v-if="sourceItem.children"
-        v-for="item in sourceItem.children"
-        :sourceItem="item"
-    ></gulu-cascader-item>
+    <div class="left">
+      <div class="label" v-for="item in items" @click="leftSelected = item">
+        {{item.name}}
+      </div>
+    </div>
+    <div class="right" v-if="rightItems">
+      <gulu-cascader-items :items="rightItems"></gulu-cascader-items>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "GuluCascaderItem",
+  name: "GuluCascaderItems",
   props: {
-    sourceItem: {
-      type: Object
+    items: {
+      type: Array
+    }
+  },
+  data () {
+    return {
+      leftSelected: null
+    }
+  },
+  computed: {
+    rightItems () {
+      if (this.leftSelected && this.leftSelected.children) {
+        return this.leftSelected.children
+      } else {
+        return null
+      }
     }
   }
 }
@@ -22,7 +38,14 @@ export default {
 
 <style scoped lang="scss">
 .cascaderItem {
-  border: 1px solid red;
-  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  .left {
+    border: 1px solid red;
+  }
+  .right {
+    margin-top: -1px;
+  }
 }
 </style>
