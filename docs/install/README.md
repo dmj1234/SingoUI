@@ -3,11 +3,11 @@
 本章节待完善
 
 ```bash
-npm install Singo-UI
+npm install singo-ui
 ```
 
 或
 
 ```bash
-yarn add Singo-UI
+yarn add singo-ui
 ```

@@ -1,13 +1,8 @@
 ---
-title: 快速上手
+title: Hello World
 ---
-## 安装
 
-# 快速上手
-请参考 [安装](../install/) 章节
-
-## Hello World
-
+Hello World
 ```javascript
 import {Button} from 'singo-ui'
 import Vue from 'vue'
@@ -18,3 +13,5 @@ new Vue({
   }
 })
 ```
+
+请参考 [安装](../install/) 章节
